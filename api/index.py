@@ -16,9 +16,9 @@ def get_data():
     data = {"message": "Hello from the Flask API!(Flask Backend is functioning!)"}
     return jsonify(data)
 
-# @app.route('/')
-# def root():
-#     return render_template("index.html")
+@app.route('/')
+def root():
+     return render_template("index.html")
 
 @app.route('/make_move',methods=["POST"])
 def make_move():

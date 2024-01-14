@@ -33,3 +33,6 @@ def make_move():
     print('best_move:', str(result.move))
     fen=board.fen()
     return {'fen': fen,'best_move': str(result.move)}
+
+if __name__ == '__main__':
+    app.run(debug=True, threaded=True)
